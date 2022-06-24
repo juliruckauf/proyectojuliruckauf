@@ -1,0 +1,555 @@
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*GRID LAYOUT*/
+
+.body div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 30% 45% 10%;
+    grid-template-areas:"header header"
+                        "frase frase"
+                        "aboutRecheFitness aboutRecheFitness"
+                        "footer footer";
+    min-width: 480px;
+}
+
+header{
+    grid-area: header;
+    background-color: #A67458;
+}
+
+header div{
+    grid-area: frase;
+}
+
+main .aboutRecheFitness{
+    grid-area: aboutRecheFitness;
+    background-color: #D9B79A;
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:"parrafo imagenEquipo"
+                        "parrafo imagenEquipo";
+    gap: 2rem;
+}
+main .aboutRecheFitness p{
+    grid-area: parrafo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .aboutRecheFitness img{
+    grid-area: imagenEquipo;
+    display: flex;
+    align-items:stretch;
+    margin: auto;
+}
+
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:"redes redes"
+                        "copyright copyright";
+    justify-content: center;
+    text-align: center;
+}
+
+.redes{
+    background-color: #A67458;
+    grid-area: redes;
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:"seguime seguime"
+                        "instagram facebook";
+    gap: 1rem;
+}
+.redes p{
+    grid-area: seguime;
+    text-align: center;
+}
+.redes a .svg1{
+    grid-area: instagram;
+    justify-self:end;
+    color: black;
+}
+.redes a .svg2{
+    grid-area: facebook;
+    justify-self:start;
+    color: black;
+}
+
+.copyright{
+    background-color: antiquewhite;
+    grid-area: copyright;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+/*CSS GENERAL*/
+.contenedor-nav{
+    display: block;
+}
+
+.contenedor-nav h1 a{
+    display: flex;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedor-nav ul li{
+    display: list-item;
+    justify-content: center;
+}
+.contenedor-nav ul li a{
+    display: flex;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    line-height: 1rem;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Francois One', sans-serif ;
+    font-weight: bold;
+}
+.contenedor-nav ul li a:hover{
+    transform: scale(2,2);
+    color: whitesmoke;
+}
+
+/*CSS PARA INDEX*/
+.contenedor-frase{
+    background-image: url(../assets/img/imagen-principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding: 5rem;
+    margin: 0;
+    border: 0;
+    
+}
+.frasePrincipal{
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    text-align:center;
+    justify-content: center;
+    color: black;
+}
+
+main .aboutRecheFitness{
+    display: flex;
+    flex-direction: column;
+}
+main .aboutRecheFitness p{
+    text-align: justify;
+}
+main .aboutRecheFitness img{
+    width: 90%;
+    height: auto;
+}
+
+/*CSS PARA TRANSFORMACIONES*/
+
+.flor{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.sobre-flor{
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+.contenedor-fotos-flor{
+    display: flex;
+    overflow-x: scroll;
+    
+}
+
+.contenedor-fotos-flor img{
+    width: 60%;
+}
+
+/*CSS PARA GALERIA*/
+.titulo-pagina{
+    text-align: center;
+    background-image: url(../assets/img/imagen-entrenamiento.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+    padding: 3rem;
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-galeria img{
+    width: 90%;
+    height: auto;
+    align-self: center;
+    padding: 1rem 1rem;
+}
+
+/*RESPONSIVE 768PX*/
+
+@media screen and (min-width:768px) {
+    .contenedor-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenedor-nav h1 a{
+        padding: 1rem;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .contenedor-nav ul li{
+        display: inline-block;
+    }
+    .contenedor-nav ul li a{
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        color: white;
+        font-family: 'Francois One', sans-serif ;
+        font-weight: bold;
+    }
+    .contenedor-frase{
+        background-image: url(../assets/img/imagen-principal.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 6rem;
+        
+    }
+    .frasePrincipal{
+        font-size: 2rem;
+        line-height: 5rem;
+        text-align: center;
+        color: black;
+    }
+    main .aboutRecheFitness{
+        display: flex;
+        flex-direction: column;
+    }
+    main .aboutRecheFitness p{
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+    main .aboutRecheFitness img{
+        width: 70%;
+        height: auto;
+    }
+    .redes{
+        background-color: #A67458;
+        grid-area: redes;
+        padding: 2rem 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+    
+    .copyright{
+        background-color: antiquewhite;
+        grid-area: copyright;
+        padding: 1rem 0rem;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+
+    .titulo-pagina{
+        text-align: center;
+        font-size: 3rem;
+        background-image: url(../assets/img/imagen-entrenamiento.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: repeat-x;
+        padding: 5rem;
+    }
+
+    .contenedor-galeria{
+        display: grid;
+        grid-template-areas: 33% 34% 33%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:"galeria-uno galeria-dos galeria-tres"
+                            "galeria-cuatro galeria-cuatro galeria-cinco";
+        padding: 1rem 1rem;
+    }
+
+    .galeria-uno{
+        grid-area: galeria-uno;
+        width: 80%;
+        height: auto;
+    }
+    .galeria-dos{
+        grid-area: galeria-dos;
+        width: 80%;
+        height: auto;
+    }
+    .galeria-tres{
+        grid-area: galeria-tres;
+        width: 80%;
+        height: auto;
+    }
+    .galeria-cuatro{
+        grid-area: galeria-cuatro;
+        width: 80%;
+        height: auto;
+    }
+    .galeria-cinco{
+        grid-area: galeria-cinco;
+        width: 80%;
+        height: auto;
+    }
+
+    .flor{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .sobre-flor{
+        text-align: justify;
+        padding: 1rem;
+    }
+    
+    .contenedor-fotos-flor{
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: 100%;
+        grid-template-areas: "flor-uno flor-dos flor-tres";
+        
+        
+    }
+    .flor-uno{
+        grid-area: flor-uno;
+        height: 90%;
+        width: 100%;
+    
+    }
+    .flor-dos{
+        grid-area: flor-dos;
+        height: 90%;
+        width: 100%;
+    }
+    .flor-tres{
+        grid-area: flor-tres;
+        height: 90%;
+        width: 100%;
+    }
+
+    
+}
+
+/*RESPONSIVE 1200PX*/
+
+@media screen and (min-width:1200px) {
+    
+    .contenedor-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenedor-nav h1 a{
+        padding: 1rem;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .contenedor-nav ul li{
+        display: inline-block;
+    }
+    .contenedor-nav ul li a{
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        color: white;
+        font-family: 'Francois One', sans-serif ;
+        font-weight: bold;
+    }
+    .contenedor-frase{
+        background-image: url(../assets/img/imagen-principal.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10rem;
+    }
+    .frasePrincipal{
+        font-size: 3rem;
+        line-height: 5rem;
+        text-align: center;
+        color: black;
+    }
+    main .aboutRecheFitness{
+        display: grid;
+    }
+    main .aboutRecheFitness p{
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    main .aboutRecheFitness img{
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .redes{
+        background-color: #A67458;
+        grid-area: redes;
+        padding: 2rem 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .copyright{
+        background-color: antiquewhite;
+        grid-area: copyright;
+        padding: 1rem 0rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo-pagina{
+        text-align: center;
+        font-size: 4rem;
+        background-image: url(../assets/img/imagen-entrenamiento.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: repeat-x;
+        padding: 8rem;
+    }
+    .contenedor-galeria{
+        display: grid;
+        grid-template-areas: 33% 34% 33%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:"galeria-uno galeria-dos galeria-tres"
+                            "galeria-cuatro galeria-cuatro galeria-cinco";
+        padding: 2rem 2rem;
+    }
+
+    .galeria-uno{
+        grid-area: galeria-uno;
+        width: 80%;
+        height: auto;
+    }
+    .galeria-dos{
+        grid-area: galeria-dos;
+        width: 80%;
+        height: auto;
+    }
+    .galeria-tres{
+        grid-area: galeria-tres;
+        width: 80%;
+        height: auto;
+    }
+    .galeria-cuatro{
+        grid-area: galeria-cuatro;
+        width: 80%;
+        height: auto;
+    }
+    .galeria-cinco{
+        grid-area: galeria-cinco;
+        width: 80%;
+        height: auto;
+    }
+
+    .flor{
+        font-size: 3rem;
+        padding: 1rem 1rem;
+    }
+    .sobre-flor{
+        text-align: justify;
+        padding: 0rem 1rem;
+    }
+    
+    .contenedor-fotos-flor{
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: 100%;
+        grid-template-areas: "flor-uno flor-dos flor-tres";
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+        
+        
+    }
+    .flor-uno{
+        grid-area: flor-uno;
+        height: 100%;
+        justify-content: center;
+    }
+    .flor-dos{
+        grid-area: flor-dos;
+        height: 100%;
+    }
+    .flor-tres{
+        grid-area: flor-tres;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
