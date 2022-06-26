@@ -53,199 +53,188 @@ main .aboutRecheFitness{
     font-family: 'Francois One', sans-serif ;
     font-weight: bold;
 }
-.contenedor-nav ul li a:hover{
-    transform: scale(2,2);
-    color: whitesmoke;
-}
-
 
 
 /*RESPONSIVE 480PX*/
-.body div{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 15% 30% 45% 10%;
-    grid-template-areas:"header header"
-                        "frase frase"
-                        "aboutRecheFitness aboutRecheFitness"
-                        "footer footer";
-}
-
-header{
-    grid-area: header;
-}
-
-header div{
-    grid-area: frase;
-}
-
-main .aboutRecheFitness{
-    grid-area: aboutRecheFitness;
-    padding: 2rem 2rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:"parrafo imagenEquipo"
-                        "parrafo imagenEquipo";
-    gap: 2rem;
-}
-main .aboutRecheFitness p{
-    grid-area: parrafo;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-main .aboutRecheFitness img{
-    grid-area: imagenEquipo;
-    display: flex;
-    align-items:stretch;
-    margin: auto;
-}
-
-footer{
-    grid-area: footer;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:"redes redes"
-                        "copyright copyright";
-    justify-content: center;
-    text-align: center;
-}
-
-.redes{
-    grid-area: redes;
-    padding: 2rem 0rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:"seguime seguime"
-                        "instagram facebook";
-    gap: 1rem;
-}
-.redes p{
-    grid-area: seguime;
-    text-align: center;
-}
-.redes a .svg1{
-    grid-area: instagram;
-    justify-self:end;
-}
-.redes a .svg2{
-    grid-area: facebook;
-    justify-self:start;
-}
-
-.copyright{
-    grid-area: copyright;
-    padding: 1rem 0rem;
-    display: flex;
-    justify-content: center;
-}
-
-/*CSS GENERAL*/
-.contenedor-nav{
-    display: block;
-}
-
-.contenedor-nav h1 a{
-    display: flex;
-    font-size: 3rem;
-}
-
-.contenedor-nav ul li{
-    display: list-item;
-    justify-content: center;
-}
-.contenedor-nav ul li a{
-    display: flex;
-    padding: 0.2rem;
-    font-size: 0.8rem;
-}
-.contenedor-nav ul li a:hover{
-    transform: scale(2,2);
-    color: whitesmoke;
-}
-
-/*CSS PARA INDEX*/
-.contenedor-frase{
-    background-image: url(../assets/img/imagen-principal.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    padding: 5rem;
-    margin: 0;
-    border: 0;
-    
-}
-.frasePrincipal{
-    font-size: 2rem;
-    text-transform: uppercase;
-    line-height: 2rem;
-    text-align:center;
-    justify-content: center;
-    color: black;
-}
-
-main .aboutRecheFitness{
-    display: flex;
-    flex-direction: column;
-}
-main .aboutRecheFitness p{
-    text-align: justify;
-}
-main .aboutRecheFitness img{
-    width: 90%;
-    height: auto;
-}
-
-/*CSS PARA TRANSFORMACIONES*/
-
-.flor{
-    font-size: 1rem;
-    padding: 0.5rem;
-}
-
-.sobre-flor{
-    text-align: justify;
-    padding: 0.5rem;
-}
-
-.contenedor-fotos-flor{
-    display: flex;
-    overflow-x: scroll;
-    
-}
-
-.contenedor-fotos-flor img{
-    width: 60%;
-}
-
-/*CSS PARA GALERIA*/
-.titulo-pagina{
-    text-align: center;
-    background-image: url(../assets/img/imagen-entrenamiento.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat-x;
-    padding: 3rem;
-}
-
-.contenedor-galeria{
-    display: flex;
-    flex-direction: column;
-}
-.contenedor-galeria img{
-    width: 90%;
-    height: auto;
-    align-self: center;
-    padding: 1rem 1rem;
-}
-
 @media screen and (min-width:480px){
-
-
+    .body div{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 30% 45% 10%;
+        grid-template-areas:"header header"
+                            "frase frase"
+                            "aboutRecheFitness aboutRecheFitness"
+                            "footer footer";
+    }
+    
+    header{
+        grid-area: header;
+    }
+    
+    header div{
+        grid-area: frase;
+    }
+    
+    main .aboutRecheFitness{
+        grid-area: aboutRecheFitness;
+        padding: 2rem 2rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:"parrafo imagenEquipo"
+                            "parrafo imagenEquipo";
+        gap: 2rem;
+    }
+    main .aboutRecheFitness p{
+        grid-area: parrafo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main .aboutRecheFitness img{
+        grid-area: imagenEquipo;
+        display: flex;
+        align-items:stretch;
+        margin: auto;
+    }
+    
+    footer{
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:"redes redes"
+                            "copyright copyright";
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .redes{
+        grid-area: redes;
+        padding: 2rem 0rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:"seguime seguime"
+                            "instagram facebook";
+        gap: 1rem;
+    }
+    .redes p{
+        grid-area: seguime;
+        text-align: center;
+    }
+    .redes a .svg1{
+        grid-area: instagram;
+        justify-self:end;
+    }
+    .redes a .svg2{
+        grid-area: facebook;
+        justify-self:start;
+    }
+    
+    .copyright{
+        grid-area: copyright;
+        padding: 1rem 0rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /*CSS GENERAL*/
+    .contenedor-nav{
+        display: block;
+    }
+    
+    .contenedor-nav h1 a{
+        display: flex;
+        font-size: 3rem;
+    }
+    
+    .contenedor-nav ul li{
+        display: list-item;
+        justify-content: center;
+    }
+    .contenedor-nav ul li a{
+        display: flex;
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+    
+    /*CSS PARA INDEX*/
+    .contenedor-frase{
+        background-image: url(../assets/img/imagen-principal.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        padding: 5rem;
+        margin: 0;
+        border: 0;
+        
+    }
+    .frasePrincipal{
+        font-size: 2rem;
+        text-transform: uppercase;
+        line-height: 2rem;
+        text-align:center;
+        justify-content: center;
+        color: black;
+    }
+    
+    main .aboutRecheFitness{
+        display: flex;
+        flex-direction: column;
+    }
+    main .aboutRecheFitness p{
+        text-align: justify;
+    }
+    main .aboutRecheFitness img{
+        width: 90%;
+        height: auto;
+    }
+    
+    /*CSS PARA FOTOS DE TRANSFORMACIONES*/
+    
+    .flor{
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .sobre-flor{
+        text-align: justify;
+        padding: 0.5rem;
+    }
+    
+    .contenedor-fotos-flor{
+        display: flex;
+        overflow-x: scroll;
+        
+    }
+    
+    .contenedor-fotos-flor img{
+        width: 60%;
+    }
+    
+    /*CSS PARA GALERIA*/
+    .titulo-pagina{
+        text-align: center;
+        background-image: url(../assets/img/imagen-entrenamiento.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: repeat-x;
+        padding: 3rem;
+    }
+    
+    .contenedor-galeria{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-galeria img{
+        width: 90%;
+        height: auto;
+        align-self: center;
+        padding: 1rem 1rem;
+    }
 }
+
 
 /*RESPONSIVE 768PX*/
 
@@ -257,8 +246,6 @@ main .aboutRecheFitness img{
     }
     .contenedor-nav h1 a{
         padding: 1rem;
-        color: black;
-        text-decoration: none;
     }
     
     .contenedor-nav ul li{
@@ -267,10 +254,6 @@ main .aboutRecheFitness img{
     .contenedor-nav ul li a{
         display: block;
         padding: 1rem;
-        text-decoration: none;
-        color: white;
-        font-family: 'Francois One', sans-serif ;
-        font-weight: bold;
     }
     .contenedor-frase{
         background-image: url(../assets/img/imagen-principal.jpg);
@@ -299,7 +282,6 @@ main .aboutRecheFitness img{
         height: auto;
     }
     .redes{
-        background-color: #A67458;
         grid-area: redes;
         padding: 2rem 2rem;
         display: flex;
@@ -310,16 +292,11 @@ main .aboutRecheFitness img{
 
     
     .copyright{
-        background-color: antiquewhite;
         grid-area: copyright;
         padding: 1rem 0rem;
         display: flex;
         justify-content: center;
     }
-
-
-
-
 
 
     .titulo-pagina{
@@ -401,7 +378,6 @@ main .aboutRecheFitness img{
         width: 100%;
     }
 
-    
 }
 
 /*RESPONSIVE 1200PX*/
@@ -415,8 +391,6 @@ main .aboutRecheFitness img{
     }
     .contenedor-nav h1 a{
         padding: 1rem;
-        color: black;
-        text-decoration: none;
     }
     
     .contenedor-nav ul li{
@@ -425,10 +399,6 @@ main .aboutRecheFitness img{
     .contenedor-nav ul li a{
         display: block;
         padding: 1rem;
-        text-decoration: none;
-        color: white;
-        font-family: 'Francois One', sans-serif ;
-        font-weight: bold;
     }
     .contenedor-frase{
         background-image: url(../assets/img/imagen-principal.jpg);
@@ -454,7 +424,6 @@ main .aboutRecheFitness img{
         padding: 0 2rem;
     }
     .redes{
-        background-color: #A67458;
         grid-area: redes;
         padding: 2rem 2rem;
         display: flex;
@@ -547,6 +516,32 @@ main .aboutRecheFitness img{
         grid-area: flor-tres;
         height: 100%;
     }
+}
+
+/*ANIMACIONES Y TRANSICIONES*/
+.frasePrincipal{
+    animation: cambio 4s ease-in-out infinite;
+}
+
+@keyframes cambio{
+    0%{
+        color: black;
+    }
+    30%{
+        color: #A67458;
+    }
+    60%{
+        color: whitesmoke;
+    }
+    90%{
+        color: black;
+    }
+
+}
+
+ul li a:hover{
+    transform: translateY(15px);
+    color: black;
 }
 
 
