@@ -5,8 +5,62 @@
     box-sizing: border-box;
 }
 
-/*GRID LAYOUT*/
+/*CSS GENERAL*/
 
+
+header{
+    background-color: #A67458;
+}
+
+main .aboutRecheFitness{
+    background-color: #D9B79A;
+}
+
+.redes{
+    background-color: #A67458;
+}
+
+.redes a .svg1{
+    color: black;
+}
+.redes a .svg2{
+    color: black;
+}
+
+.copyright{
+    background-color: antiquewhite;
+}
+
+.contenedor-nav h1 a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedor-nav ul li{
+    display: list-item;
+    justify-content: center;
+}
+.contenedor-nav ul li a{
+    text-transform: uppercase;
+    line-height: 1rem;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Francois One', sans-serif ;
+    font-weight: bold;
+}
+.contenedor-nav ul li a:hover{
+    transform: scale(2,2);
+    color: whitesmoke;
+}
+
+
+
+/*RESPONSIVE 480PX*/
 .body div{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -15,12 +69,10 @@
                         "frase frase"
                         "aboutRecheFitness aboutRecheFitness"
                         "footer footer";
-    min-width: 480px;
 }
 
 header{
     grid-area: header;
-    background-color: #A67458;
 }
 
 header div{
@@ -29,7 +81,6 @@ header div{
 
 main .aboutRecheFitness{
     grid-area: aboutRecheFitness;
-    background-color: #D9B79A;
     padding: 2rem 2rem;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -63,7 +114,6 @@ footer{
 }
 
 .redes{
-    background-color: #A67458;
     grid-area: redes;
     padding: 2rem 0rem;
     display: grid;
@@ -80,16 +130,13 @@ footer{
 .redes a .svg1{
     grid-area: instagram;
     justify-self:end;
-    color: black;
 }
 .redes a .svg2{
     grid-area: facebook;
     justify-self:start;
-    color: black;
 }
 
 .copyright{
-    background-color: antiquewhite;
     grid-area: copyright;
     padding: 1rem 0rem;
     display: flex;
@@ -104,11 +151,6 @@ footer{
 .contenedor-nav h1 a{
     display: flex;
     font-size: 3rem;
-    text-transform: uppercase;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
 }
 
 .contenedor-nav ul li{
@@ -119,14 +161,6 @@ footer{
     display: flex;
     padding: 0.2rem;
     font-size: 0.8rem;
-    text-transform: uppercase;
-    line-height: 1rem;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-family: 'Francois One', sans-serif ;
-    font-weight: bold;
 }
 .contenedor-nav ul li a:hover{
     transform: scale(2,2);
@@ -206,6 +240,11 @@ main .aboutRecheFitness img{
     height: auto;
     align-self: center;
     padding: 1rem 1rem;
+}
+
+@media screen and (min-width:480px){
+
+
 }
 
 /*RESPONSIVE 768PX*/
