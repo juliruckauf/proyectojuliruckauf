@@ -71,8 +71,8 @@ form{
 
 
 
-/*RESPONSIVE 480PX*/
-@media screen and (min-width:480px){
+/*RESPONSIVE 320PX*/
+@media screen and (min-width:320px){
     .body div{
         display: grid;
         grid-template-columns: 50% 50%;
