@@ -31,27 +31,27 @@ main .aboutRecheFitness{
     background-color: antiquewhite;
 }
 
-.contenedor-nav h1 a{
-    text-transform: uppercase;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
+.navbar-color{
+    background-color: #A67458;
 }
 
-.contenedor-nav ul li{
-    display: list-item;
-    justify-content: center;
-}
-.contenedor-nav ul li a{
+.navbar-brand{
     text-transform: uppercase;
-    line-height: 1rem;
-    text-align: center;
-    justify-content: center;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Archivo Black';
+}
+
+.nav-link{
+    text-transform: uppercase;
     text-decoration: none;
     color: white;
-    font-family: 'Francois One', sans-serif ;
-    font-weight: bold;
+    font-family: 'Alegreya Sans', sans-serif;
+    letter-spacing: 0.01rem;
+    
+    
 }
 
 
@@ -139,26 +139,6 @@ main .aboutRecheFitness{
         justify-content: center;
     }
     
-    /*CSS GENERAL*/
-    .contenedor-nav{
-        display: block;
-    }
-    
-    .contenedor-nav h1 a{
-        display: flex;
-        font-size: 3rem;
-    }
-    
-    .contenedor-nav ul li{
-        display: list-item;
-        justify-content: center;
-    }
-    .contenedor-nav ul li a{
-        display: flex;
-        padding: 0.2rem;
-        font-size: 0.8rem;
-    }
-    
     /*CSS PARA INDEX*/
     .contenedor-frase{
         background-image: url(../assets/img/imagen-principal.jpg);
@@ -239,22 +219,6 @@ main .aboutRecheFitness{
 /*RESPONSIVE 768PX*/
 
 @media screen and (min-width:768px) {
-    .contenedor-nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .contenedor-nav h1 a{
-        padding: 1rem;
-    }
-    
-    .contenedor-nav ul li{
-        display: inline-block;
-    }
-    .contenedor-nav ul li a{
-        display: block;
-        padding: 1rem;
-    }
     .contenedor-frase{
         background-image: url(../assets/img/imagen-principal.jpg);
         background-repeat: no-repeat;
@@ -383,23 +347,6 @@ main .aboutRecheFitness{
 /*RESPONSIVE 1200PX*/
 
 @media screen and (min-width:1200px) {
-    
-    .contenedor-nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .contenedor-nav h1 a{
-        padding: 1rem;
-    }
-    
-    .contenedor-nav ul li{
-        display: inline-block;
-    }
-    .contenedor-nav ul li a{
-        display: block;
-        padding: 1rem;
-    }
     .contenedor-frase{
         background-image: url(../assets/img/imagen-principal.jpg);
         background-repeat: no-repeat;
@@ -539,9 +486,9 @@ main .aboutRecheFitness{
 
 }
 
-ul li a:hover{
+.nav-link:hover{
     transform: translateY(15px);
-    color: black;
+    color: #5C7373;
 }
 
 
