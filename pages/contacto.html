@@ -50,37 +50,61 @@
 </header>
 
 <main>
-        <h3 class="titulo-formulario">Contactate conmigo</h3>
-        <div>
-            <form>
-                <fieldset class="contenedor-formulario">
-                <label for="campo-nombre">Nombre</label>
-                    <input type="text"id="campo-nombre" placeholder="Nombre...">
+        <h3 class="titulo-formulario text-center pt-5 pb-5">Contactate conmigo</h3>
 
-                <label for="campo-apellido">Apellido</label>
-                    <input type="text" id="campo-apellido" placeholder="Apellido...">
+        <div class="container justify-content-center">
+        <form class="container row g-3 pb-5">
 
-                <label for="campo-telefono">Teléfono</label>
-                    <input type="tel" id="campo-telefono" placeholder="0351-01234567">
-                <label for="correo-electronico">Correo Electrónico</label>
-                    <input type="email" id="correo-electronico" placeholder="rechefitness@email.com"> 
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
 
-                <label for="conocimiento-de-mi">¿Cómo me conociste?</label>
-                    <select name="conocimiento-de-mi" id="conocimiento-de-mi">
-                    <option value="Recomendación de amigos">Recomendación de amigos</option>
-                    <option value="Redes Sociales">Redes Sociales</option>
-                    <option value="Redes Sociales">Otra</option>
-                    </select>
+            <div class="col-md-6">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido">
+            </div>
 
-                <label for="actividad-primera-vez">¿Es tu primera vez haciendo actividad física?</label>
-                    <input type="checkbox" value="Si" id="actividad-primera-vez">
-                <label for="sobre-vos">Contame un poco sobre vos</label>
-                    <textarea name="sobre-vos" id="sobre-vos" cols="30" rows="10"></textarea>
+            <div class="col-md-6">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="351-123456">
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="rechefitnes@email.com">
+            </div>
+
+            <div class="col-12">
+                <label for="conocimiento-de-mi" class="form-label">¿Cómo me conociste?</label>
+                <select id="conocimiento-de-mi" class="form-select">
+                <option selected>Elegí una opción</option>
+                <option>Recomendación de amigos</option>
+                <option>Redes sociales</option>
+                <option>Otra</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="actividadCheck">
+                <label class="form-check-label" for="actividadCheck">
+                    ¿Es tu primera vez haciendo actividad física?
+                </label>
+              </div>
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text">Contame un poco sobre vos</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">Enviar formulario</button>
+                <button type="reset" class="btn btn-secondary">Borrar</button>
+            </div>
             
-                <input type="submit"value="Enviar mensaje">
-                <input type="reset"value="Borrar">
-                </fieldset>
-            </form>
+        </form>
         </div>
 
 </main>
@@ -99,7 +123,7 @@
         </div>
     </div>
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center pt-2">
         <p>&copy; Copyright 2022  | Reche Fitness</p>
     </div>
 </footer>

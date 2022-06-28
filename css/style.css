@@ -44,6 +44,18 @@ body{
     align-content: center;
 }
 
+.titulo-formulario{
+    font-size: 3rem;
+    font-family: 'Alegreya Sans';
+    font-weight: bold;
+    color: #8d4d28;
+}
+
+form{
+    font-family: 'Alegreya Sans';
+    font-size: 1rem;
+    color: black;
+}
 
 
 
@@ -90,48 +102,7 @@ body{
         align-items:stretch;
         margin: auto;
     }
-    /*
-    footer{
-        grid-area: footer;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:"redes redes"
-                            "copyright copyright";
-        justify-content: center;
-        text-align: center;
-    }
     
-    .redes{
-        grid-area: redes;
-        padding: 2rem 0rem;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:"seguime seguime"
-                            "instagram facebook";
-        gap: 1rem;
-    }
-    .redes p{
-        grid-area: seguime;
-        text-align: center;
-    }
-    .redes a .svg1{
-        grid-area: instagram;
-        justify-self:end;
-    }
-    .redes a .svg2{
-        grid-area: facebook;
-        justify-self:start;
-    }
-    
-    .copyright{
-        grid-area: copyright;
-        padding: 1rem 0rem;
-        display: flex;
-        justify-content: center;
-    }
-    */
     /*CSS PARA INDEX*/
     .contenedor-frase{
         background-image: url(../assets/img/imagen-principal.jpg);
@@ -206,6 +177,7 @@ body{
         align-self: center;
         padding: 1rem 1rem;
     }
+
 }
 
 
@@ -238,24 +210,6 @@ body{
         width: 70%;
         height: auto;
     }
-    /*
-    .redes{
-        grid-area: redes;
-        padding: 2rem 2rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-
-    
-    .copyright{
-        grid-area: copyright;
-        padding: 1rem 0rem;
-        display: flex;
-        justify-content: center;
-    }
-*/
 
     .titulo-pagina{
         text-align: center;
@@ -364,23 +318,7 @@ body{
         width: 100%;
         padding: 0 2rem;
     }
-    /*
-    .redes{
-        grid-area: redes;
-        padding: 2rem 2rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
     
-    .copyright{
-        background-color: antiquewhite;
-        grid-area: copyright;
-        padding: 1rem 0rem;
-        display: flex;
-        justify-content: center;
-    }
-*/
     .titulo-pagina{
         text-align: center;
         font-size: 4rem;
