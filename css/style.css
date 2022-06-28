@@ -12,27 +12,8 @@ header{
     background-color: #A67458;
 }
 
-main .aboutRecheFitness{
-    background-color: #D9B79A;
-}
-
-.redes{
-    background-color: #A67458;
-}
-
-.redes a .svg1{
-    color: black;
-}
-.redes a .svg2{
-    color: black;
-}
-
-.copyright{
-    background-color: antiquewhite;
-}
-
-.navbar-color{
-    background-color: #A67458;
+body{
+    background-color: #A5A692;
 }
 
 .navbar-brand{
@@ -53,6 +34,18 @@ main .aboutRecheFitness{
     
     
 }
+
+.container-fluid-1{
+    padding: 1rem;
+    font-family: 'Alegreya Sans';
+    font-size: 1.2rem;
+    color: whitesmoke;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
 
 
 /*RESPONSIVE 480PX*/
@@ -97,7 +90,7 @@ main .aboutRecheFitness{
         align-items:stretch;
         margin: auto;
     }
-    
+    /*
     footer{
         grid-area: footer;
         display: grid;
@@ -138,7 +131,7 @@ main .aboutRecheFitness{
         display: flex;
         justify-content: center;
     }
-    
+    */
     /*CSS PARA INDEX*/
     .contenedor-frase{
         background-image: url(../assets/img/imagen-principal.jpg);
@@ -245,6 +238,7 @@ main .aboutRecheFitness{
         width: 70%;
         height: auto;
     }
+    /*
     .redes{
         grid-area: redes;
         padding: 2rem 2rem;
@@ -261,7 +255,7 @@ main .aboutRecheFitness{
         display: flex;
         justify-content: center;
     }
-
+*/
 
     .titulo-pagina{
         text-align: center;
@@ -370,6 +364,7 @@ main .aboutRecheFitness{
         width: 100%;
         padding: 0 2rem;
     }
+    /*
     .redes{
         grid-area: redes;
         padding: 2rem 2rem;
@@ -385,7 +380,7 @@ main .aboutRecheFitness{
         display: flex;
         justify-content: center;
     }
-
+*/
     .titulo-pagina{
         text-align: center;
         font-size: 4rem;
