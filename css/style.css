@@ -55,7 +55,18 @@ form{
     font-family: 'Alegreya Sans';
     font-size: 1rem;
     color: black;
+} 
+
+.transformaciones img{
+    height:auto;
+    width: auto;
+    max-height: 400px;
+    min-height: 400px;
+    max-width: auto;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
+
 
 
 
@@ -135,6 +146,7 @@ form{
         height: auto;
     }
     
+
     /*CSS PARA FOTOS DE TRANSFORMACIONES*/
     
     .flor{
@@ -145,16 +157,6 @@ form{
     .sobre-flor{
         text-align: justify;
         padding: 0.5rem;
-    }
-    
-    .contenedor-fotos-flor{
-        display: flex;
-        overflow-x: scroll;
-        
-    }
-    
-    .contenedor-fotos-flor img{
-        width: 60%;
     }
     
     /*CSS PARA GALERIA*/
@@ -264,31 +266,6 @@ form{
         text-align: justify;
         padding: 1rem;
     }
-    
-    .contenedor-fotos-flor{
-        display: grid;
-        grid-template-columns: 33% 34% 33%;
-        grid-template-rows: 100%;
-        grid-template-areas: "flor-uno flor-dos flor-tres";
-        
-        
-    }
-    .flor-uno{
-        grid-area: flor-uno;
-        height: 90%;
-        width: 100%;
-    
-    }
-    .flor-dos{
-        grid-area: flor-dos;
-        height: 90%;
-        width: 100%;
-    }
-    .flor-tres{
-        grid-area: flor-tres;
-        height: 90%;
-        width: 100%;
-    }
 
 }
 
@@ -372,31 +349,9 @@ form{
         padding: 0rem 1rem;
     }
     
-    .contenedor-fotos-flor{
-        display: grid;
-        grid-template-columns: 33% 34% 33%;
-        grid-template-rows: 100%;
-        grid-template-areas: "flor-uno flor-dos flor-tres";
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 2rem;
-        
-        
+    
     }
-    .flor-uno{
-        grid-area: flor-uno;
-        height: 100%;
-        justify-content: center;
-    }
-    .flor-dos{
-        grid-area: flor-dos;
-        height: 100%;
-    }
-    .flor-tres{
-        grid-area: flor-tres;
-        height: 100%;
-    }
-}
+    
 
 /*ANIMACIONES Y TRANSICIONES*/
 .frasePrincipal{
