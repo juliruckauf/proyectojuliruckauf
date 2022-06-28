@@ -67,6 +67,17 @@ form{
     margin-bottom: 2rem;
 }
 
+.galeria img{
+    width: 100%;
+    height: 500px;
+    padding: 2rem;
+}
+.galeria video{
+    width: 100%;
+    height: 500px;
+    padding: 2rem;
+}
+
 
 
 
@@ -169,16 +180,6 @@ form{
         padding: 3rem;
     }
     
-    .contenedor-galeria{
-        display: flex;
-        flex-direction: column;
-    }
-    .contenedor-galeria img{
-        width: 90%;
-        height: auto;
-        align-self: center;
-        padding: 1rem 1rem;
-    }
 
 }
 
@@ -221,41 +222,6 @@ form{
         background-position: center;
         background-repeat: repeat-x;
         padding: 5rem;
-    }
-
-    .contenedor-galeria{
-        display: grid;
-        grid-template-areas: 33% 34% 33%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:"galeria-uno galeria-dos galeria-tres"
-                            "galeria-cuatro galeria-cuatro galeria-cinco";
-        padding: 1rem 1rem;
-    }
-
-    .galeria-uno{
-        grid-area: galeria-uno;
-        width: 80%;
-        height: auto;
-    }
-    .galeria-dos{
-        grid-area: galeria-dos;
-        width: 80%;
-        height: auto;
-    }
-    .galeria-tres{
-        grid-area: galeria-tres;
-        width: 80%;
-        height: auto;
-    }
-    .galeria-cuatro{
-        grid-area: galeria-cuatro;
-        width: 80%;
-        height: auto;
-    }
-    .galeria-cinco{
-        grid-area: galeria-cinco;
-        width: 80%;
-        height: auto;
     }
 
     .flor{
@@ -305,40 +271,6 @@ form{
         background-repeat: repeat-x;
         padding: 8rem;
     }
-    .contenedor-galeria{
-        display: grid;
-        grid-template-areas: 33% 34% 33%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:"galeria-uno galeria-dos galeria-tres"
-                            "galeria-cuatro galeria-cuatro galeria-cinco";
-        padding: 2rem 2rem;
-    }
-
-    .galeria-uno{
-        grid-area: galeria-uno;
-        width: 80%;
-        height: auto;
-    }
-    .galeria-dos{
-        grid-area: galeria-dos;
-        width: 80%;
-        height: auto;
-    }
-    .galeria-tres{
-        grid-area: galeria-tres;
-        width: 80%;
-        height: auto;
-    }
-    .galeria-cuatro{
-        grid-area: galeria-cuatro;
-        width: 80%;
-        height: auto;
-    }
-    .galeria-cinco{
-        grid-area: galeria-cinco;
-        width: 80%;
-        height: auto;
-    }
 
     .flor{
         font-size: 3rem;
@@ -377,6 +309,13 @@ form{
 .nav-link:hover{
     transform: translateY(15px);
     color: #5C7373;
+}
+
+.galeria img:hover{
+    border: 5px solid #A5A692;
+}
+.galeria video:hover{
+    border: 5px solid #A5A692;
 }
 
 
