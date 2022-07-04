@@ -7,13 +7,8 @@
 
 /*CSS GENERAL*/
 
-
-header{
-    background-color: #A67458;
-}
-
 body{
-    background-color: #A5A692;
+    background-color: whitesmoke;
 }
 
 .navbar-brand{
@@ -30,6 +25,7 @@ body{
     text-decoration: none;
     color: white;
     font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bolder;
     letter-spacing: 0.01rem;
     
     
@@ -72,7 +68,7 @@ body{
 }
 
 form{
-    font-family: 'Alegreya Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     color: black;
 } 
@@ -89,9 +85,11 @@ form{
     padding: 2rem;
 }
 
-/*TRANSFORMACIONES*/
+/*CARDS*/
 .card-text{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 1.1rem;
 }
 
 /*RESPONSIVE 320PX*/
@@ -116,6 +114,7 @@ form{
     }
     .card img {
         padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .card{
         margin-top: 1rem;
@@ -179,27 +178,28 @@ form{
         color: black;
     }
     30%{
-        color: #A67458;
-    }
-    60%{
         color: whitesmoke;
     }
-    90%{
+    60%{
         color: black;
+    }
+    90%{
+        color: whitesmoke;
     }
 
 }
 
 .nav-link:hover{
-    transform: translateY(15px);
+    transform: translateY(10px);
     color: #5C7373;
+    font-weight: bolder;
 }
 
 .galeria img:hover{
-    border: 5px solid #A5A692;
+    border: 10px solid whitesmoke;
 }
 .galeria video:hover{
-    border: 5px solid #A5A692;
+    border: 10px solid whitesmoke;
 }
 
 
