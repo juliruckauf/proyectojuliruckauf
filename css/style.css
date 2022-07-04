@@ -35,6 +35,24 @@ body{
     
 }
 
+.contenedor-titulo-pagina{
+    text-align: center;
+    background-image: url(../assets/img/imagen-secundaria.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7rem;
+}
+
+.titulo-pagina{
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    text-align:center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
 /*FOOTER*/
 .container-fluid-1{
     padding: 1rem;
@@ -60,16 +78,6 @@ form{
 } 
 
 /*IMAGENES*/
-.transformaciones img{
-    height:auto;
-    width: auto;
-    max-height: 400px;
-    min-height: 400px;
-    max-width: auto;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
 .galeria img{
     width: 100%;
     height: 500px;
@@ -81,53 +89,14 @@ form{
     padding: 2rem;
 }
 
-
-
-
+/*TRANSFORMACIONES*/
+.card-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /*RESPONSIVE 320PX*/
 @media screen and (min-width:320px){
-    .body div{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 15% 30% 45% 10%;
-        grid-template-areas:"header header"
-                            "frase frase"
-                            "aboutRecheFitness aboutRecheFitness"
-                            "footer footer";
-    }
-    
-    header{
-        grid-area: header;
-    }
-    
-    header div{
-        grid-area: frase;
-    }
-    
-    main .aboutRecheFitness{
-        grid-area: aboutRecheFitness;
-        padding: 2rem 2rem;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:"parrafo imagenEquipo"
-                            "parrafo imagenEquipo";
-        gap: 2rem;
-    }
-    main .aboutRecheFitness p{
-        grid-area: parrafo;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    main .aboutRecheFitness img{
-        grid-area: imagenEquipo;
-        display: flex;
-        align-items:stretch;
-        margin: auto;
-    }
-    
+
     /*CSS PARA INDEX*/
     .contenedor-frase{
         background-image: url(../assets/img/imagen-principal.jpg);
@@ -135,8 +104,6 @@ form{
         background-position: center;
         background-size:cover;
         padding: 5rem;
-        margin: 0;
-        border: 0;
         
     }
     .frasePrincipal{
@@ -145,45 +112,15 @@ form{
         line-height: 2rem;
         text-align:center;
         justify-content: center;
-        color: black;
+        color: whitesmoke;
     }
-    
-    main .aboutRecheFitness{
-        display: flex;
-        flex-direction: column;
+    .card img {
+        padding-top: 1rem;
     }
-    main .aboutRecheFitness p{
-        text-align: justify;
+    .card{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
-    main .aboutRecheFitness img{
-        width: 90%;
-        height: auto;
-    }
-    
-
-    /*CSS PARA FOTOS DE TRANSFORMACIONES*/
-    
-    .flor{
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
-    
-    .sobre-flor{
-        text-align: justify;
-        padding: 0.5rem;
-    }
-    
-    /*CSS PARA GALERIA*/
-    .titulo-pagina{
-        text-align: center;
-        background-image: url(../assets/img/imagen-entrenamiento.jpg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: repeat-x;
-        padding: 3rem;
-    }
-    
-
 }
 
 
@@ -204,36 +141,9 @@ form{
         text-align: center;
         color: black;
     }
-    main .aboutRecheFitness{
-        display: flex;
-        flex-direction: column;
-    }
-    main .aboutRecheFitness p{
-        text-align: justify;
-        font-size: 1.5rem;
-    }
-    main .aboutRecheFitness img{
-        width: 70%;
-        height: auto;
-    }
-
-    .titulo-pagina{
-        text-align: center;
-        font-size: 3rem;
-        background-image: url(../assets/img/imagen-entrenamiento.jpg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: repeat-x;
-        padding: 5rem;
-    }
-
-    .flor{
-        font-size: 2rem;
-        padding: 1rem;
-    }
-    .sobre-flor{
-        text-align: justify;
-        padding: 1rem;
+    .card{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
 }
@@ -253,40 +163,11 @@ form{
         text-align: center;
         color: black;
     }
-    main .aboutRecheFitness{
-        display: grid;
+    .card{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
-    main .aboutRecheFitness p{
-        align-items: center;
-        font-size: 1.5rem;
-    }
-    main .aboutRecheFitness img{
-        width: 100%;
-        padding: 0 2rem;
-    }
-    
-    .titulo-pagina{
-        text-align: center;
-        font-size: 4rem;
-        background-image: url(../assets/img/imagen-entrenamiento.jpg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: repeat-x;
-        padding: 8rem;
-    }
-
-    .flor{
-        font-size: 3rem;
-        padding: 1rem 1rem;
-    }
-    .sobre-flor{
-        text-align: justify;
-        padding: 0rem 1rem;
-    }
-    
-    
-    }
-    
+}
 
 /*ANIMACIONES Y TRANSICIONES*/
 .frasePrincipal{
