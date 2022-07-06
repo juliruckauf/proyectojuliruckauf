@@ -1,0 +1,266 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CSS GENERAL*/
+
+body{
+    background-color: whitesmoke;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Archivo Black';
+}
+
+.nav-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.01rem;
+}
+
+.contenedor-titulo-pagina{
+    text-align: center;
+    background-image: url(../assets/img/imagen-secundaria.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7rem;
+        .titulo-pagina{
+            font-size: 2rem;
+            text-transform: uppercase;
+            line-height: 2rem;
+            text-align:center;
+            justify-content: center;
+            color: whitesmoke;
+        }
+}
+
+/*FOOTER*/
+.container-fluid-1{
+    padding: 1rem;
+    font-family: 'Alegreya Sans';
+    font-size: 1.2rem;
+    color: whitesmoke;
+    justify-content: center;
+    align-content: center;
+}
+
+/*FORMULARIO*/
+.titulo-formulario{
+    font-size: 3rem;
+    font-family: 'Alegreya Sans';
+    font-weight: bold;
+    color: #8d4d28;
+}
+
+form{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: black;
+} 
+
+/*IMAGENES*/
+.galeria img{
+    width: 100%;
+    height: 500px;
+    padding: 2rem;
+}
+.galeria video{
+    width: 100%;
+    height: 500px;
+    padding: 2rem;
+}
+
+/*CARDS*/
+.card-text{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 1.1rem;
+}
+
+/*ITEMS PRINCIPALES EN INDEX*/
+
+.items-principales{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "item-1"
+                        "item-2"
+                        "item-3"
+                        "item-4";
+        .item-1{
+            grid-area: item-1;
+            justify-self: center;
+        }
+        .item-2{
+            grid-area: item-2;
+            justify-self: center;
+        }
+        .item-3{
+            grid-area: item-3;
+            justify-self: center;
+        }
+        .item-4{
+            grid-area: item-4;
+            justify-self: center;
+        }
+        
+        .circulo{
+            background: #779186;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 2rem;
+            h3{
+                font-family: 'Open Sans', sans-serif;
+                color: black;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+}
+
+/*RESPONSIVE 320PX*/
+@media screen and (min-width:320px){
+.contenedor-frase{
+    background-image: url(../assets/img/imagen-principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding: 5rem;
+        .frasePrincipal{
+            font-size: 2rem;
+            text-transform: uppercase;
+            line-height: 2rem;
+            text-align:center;
+            justify-content: center;
+            color: whitesmoke;
+        }
+}
+
+.card{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+        img {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+}
+
+.circulo{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    h3{
+        font-size: 1rem;
+    }
+}
+}
+
+/*RESPONSIVE 768PX*/
+@media screen and (min-width:768px) {
+    .contenedor-frase{
+        background-image: url(../assets/img/imagen-principal.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 6rem;
+        .frasePrincipal{
+            font-size: 2rem;
+            line-height: 5rem;
+            text-align: center;
+            color: black;
+        }  
+    }
+
+    .card{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .circulo{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/*RESPONSIVE 1200PX*/
+@media screen and (min-width:1200px) {
+    .contenedor-frase{
+        background-image: url(../assets/img/imagen-principal.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10rem;
+        .frasePrincipal{
+            font-size: 3rem;
+            line-height: 5rem;
+            text-align: center;
+            color: black;
+        }
+    }
+    .card{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .circulo{
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        h3{
+            font-size: 2rem;
+        }
+    }
+}
+
+/*ANIMACIONES Y TRANSICIONES*/
+.frasePrincipal{
+    animation: cambio 4s ease-in-out infinite;
+}
+
+@keyframes cambio{
+    0%{
+        color: black;
+    }
+    30%{
+        color: whitesmoke;
+    }
+    60%{
+        color: black;
+    }
+    90%{
+        color: whitesmoke;
+    }
+
+}
+
+.nav-link:hover{
+    transform: translateY(10px);
+    color: #5C7373;
+    font-weight: bolder;
+}
+
+.galeria img:hover{
+    border: 10px solid whitesmoke;
+}
+.galeria video:hover{
+    border: 10px solid whitesmoke;
+}
+
+.circulo:hover{
+    background-color: #DDC5B8;
+}
+
