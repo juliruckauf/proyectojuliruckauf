@@ -1,0 +1,36 @@
+.frasePrincipal{
+    animation: cambio 4s ease-in-out infinite;
+}
+
+@keyframes cambio{
+    0%{
+        color: black;
+    }
+    30%{
+        color: whitesmoke;
+    }
+    60%{
+        color: black;
+    }
+    90%{
+        color: whitesmoke;
+    }
+
+}
+
+.nav-link:hover{
+    transform: translateY(10px);
+    color: #5C7373;
+    font-weight: bolder;
+}
+
+.galeria img:hover{
+    border: 10px solid whitesmoke;
+}
+.galeria video:hover{
+    border: 10px solid whitesmoke;
+}
+
+.circulo:hover{
+    background-color: #DDC5B8;
+}

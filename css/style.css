@@ -4,91 +4,10 @@
   box-sizing: border-box;
 }
 
-/*CSS GENERAL*/
 body {
   background-color: whitesmoke;
 }
 
-.navbar-brand {
-  text-transform: uppercase;
-  color: black;
-  text-shadow: 2px 2px 2px white;
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: "Archivo Black";
-}
-
-.nav-link {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  font-family: "Alegreya Sans", sans-serif;
-  font-weight: bolder;
-  letter-spacing: 0.01rem;
-}
-
-.contenedor-titulo-pagina {
-  text-align: center;
-  background-image: url(../assets/img/imagen-secundaria.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 7rem;
-}
-.contenedor-titulo-pagina .titulo-pagina {
-  font-size: 2rem;
-  text-transform: uppercase;
-  line-height: 2rem;
-  text-align: center;
-  justify-content: center;
-  color: whitesmoke;
-}
-
-/*FOOTER*/
-.container-fluid-1 {
-  padding: 1rem;
-  font-family: "Alegreya Sans";
-  font-size: 1.2rem;
-  color: whitesmoke;
-  justify-content: center;
-  align-content: center;
-}
-
-/*FORMULARIO*/
-.titulo-formulario {
-  font-size: 3rem;
-  font-family: "Alegreya Sans";
-  font-weight: bold;
-  color: #8d4d28;
-}
-
-form {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  color: black;
-}
-
-/*IMAGENES*/
-.galeria img {
-  width: 100%;
-  height: 500px;
-  padding: 2rem;
-}
-
-.galeria video {
-  width: 100%;
-  height: 500px;
-  padding: 2rem;
-}
-
-/*CARDS*/
-.card-text {
-  font-family: "Open Sans", sans-serif;
-  color: black;
-  font-size: 1.1rem;
-}
-
-/*ITEMS PRINCIPALES EN INDEX*/
 .items-principales {
   display: grid;
   grid-template-columns: 100%;
@@ -126,7 +45,82 @@ form {
   text-transform: uppercase;
 }
 
-/*RESPONSIVE 320PX*/
+.navbar-brand {
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 2px 2px 2px white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Archivo Black";
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.01rem;
+}
+
+/*FOOTER*/
+.container-fluid-1 {
+  padding: 1rem;
+  font-family: "Alegreya Sans";
+  font-size: 1.2rem;
+  color: whitesmoke;
+  justify-content: center;
+  align-content: center;
+}
+
+.contenedor-titulo-pagina {
+  text-align: center;
+  background-image: url(../assets/img/imagen-secundaria.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 7rem;
+}
+.contenedor-titulo-pagina .titulo-pagina {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+  text-align: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.galeria img {
+  width: 100%;
+  height: 500px;
+  padding: 2rem;
+}
+
+.galeria video {
+  width: 100%;
+  height: 500px;
+  padding: 2rem;
+}
+
+.card-text {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.titulo-formulario {
+  font-size: 3rem;
+  font-family: "Alegreya Sans";
+  font-weight: bold;
+  color: #8d4d28;
+}
+
+form {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
 @media screen and (min-width: 320px) {
   .contenedor-frase {
     background-image: url(../assets/img/imagen-principal.jpg);
@@ -160,7 +154,6 @@ form {
     font-size: 1rem;
   }
 }
-/*RESPONSIVE 768PX*/
 @media screen and (min-width: 768px) {
   .contenedor-frase {
     background-image: url(../assets/img/imagen-principal.jpg);
@@ -188,7 +181,6 @@ form {
     font-size: 1.5rem;
   }
 }
-/*RESPONSIVE 1200PX*/
 @media screen and (min-width: 1200px) {
   .contenedor-frase {
     background-image: url(../assets/img/imagen-principal.jpg);
@@ -215,7 +207,6 @@ form {
     font-size: 2rem;
   }
 }
-/*ANIMACIONES Y TRANSICIONES*/
 .frasePrincipal {
   animation: cambio 4s ease-in-out infinite;
 }

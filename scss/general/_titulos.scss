@@ -1,0 +1,16 @@
+.contenedor-titulo-pagina{
+    text-align: center;
+    background-image: url(../assets/img/imagen-secundaria.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7rem;
+        .titulo-pagina{
+            font-size: 2rem;
+            text-transform: uppercase;
+            line-height: 2rem;
+            text-align:center;
+            justify-content: center;
+            color: whitesmoke;
+        }
+}
