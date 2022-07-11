@@ -1,6 +1,25 @@
+.card{
+    border-radius: 1%;
+    border: black solid;
+}
+
+.tarjeta-1{
+    @extend .card;
+    background-color: map-get($map:$palette , $key:'rosa' );
+}
+.tarjeta-2{
+    @extend .card;
+    background-color: map-get($map:$palette , $key:'gris' );
+}
+.tarjeta-3{
+    @extend .card;
+    background-color: map-get($map:$palette , $key:'gris' );
+}
+
 .card-text{
-    font-family: 'Open Sans', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     font-size: 1.1rem;
     text-align: justify;
 }
+

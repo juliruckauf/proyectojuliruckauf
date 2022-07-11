@@ -11,6 +11,6 @@
             line-height: 2rem;
             text-align:center;
             justify-content: center;
-            color: whitesmoke;
+            color: map-get($map:$palette , $key:'secondary' );
         }
 }

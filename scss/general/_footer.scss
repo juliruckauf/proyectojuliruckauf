@@ -3,7 +3,7 @@
     padding: 1rem;
     font-family: 'Alegreya Sans';
     font-size: 1.2rem;
-    color: whitesmoke;
+    color: map-get($map:$palette , $key:'secondary');
     justify-content: center;
     align-content: center;
 }

@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-.card-1 {
-  background-color: #E3DCD0;
-}
-
-.card-2 {
-  background-color: #779186;
-}
-
-.card-3 {
-  background-color: #E5CBB5;
-}
-
 body {
   background-color: whitesmoke;
 }
@@ -55,6 +43,10 @@ body {
   color: black;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.navbar {
+  background-color: #073d49;
 }
 
 .navbar-brand {
@@ -114,8 +106,25 @@ body {
   padding: 2rem;
 }
 
+.card, .tarjeta-3, .tarjeta-2, .tarjeta-1 {
+  border-radius: 1%;
+  border: black solid;
+}
+
+.tarjeta-1 {
+  background-color: #DDC5B8;
+}
+
+.tarjeta-2 {
+  background-color: #779186;
+}
+
+.tarjeta-3 {
+  background-color: #779186;
+}
+
 .card-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   font-size: 1.1rem;
   text-align: justify;
@@ -125,7 +134,7 @@ body {
   font-size: 3rem;
   font-family: "Alegreya Sans";
   font-weight: bold;
-  color: #8d4d28;
+  color: #DDC5B8;
 }
 
 form {
@@ -148,15 +157,17 @@ form {
     line-height: 2rem;
     text-align: center;
     justify-content: center;
-    color: whitesmoke;
   }
-  .card {
+  .card, .tarjeta-1, .tarjeta-2, .tarjeta-3 {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .card img {
+  .card img, .tarjeta-1 img, .tarjeta-2 img, .tarjeta-3 img {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
   }
   .circulo {
     width: 15rem;
@@ -181,9 +192,12 @@ form {
     text-align: center;
     color: black;
   }
-  .card {
+  .card, .tarjeta-1, .tarjeta-2, .tarjeta-3 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .card-text {
+    font-size: 1rem;
   }
   .circulo {
     width: 20rem;
@@ -198,6 +212,7 @@ form {
   .contenedor-frase {
     background-image: url(../assets/img/imagen-principal.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding: 10rem;
   }
@@ -207,7 +222,7 @@ form {
     text-align: center;
     color: black;
   }
-  .card {
+  .card, .tarjeta-1, .tarjeta-2, .tarjeta-3 {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }

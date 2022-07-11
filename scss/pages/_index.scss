@@ -26,9 +26,9 @@ body{
             grid-area: item-4;
             justify-self: center;
         }
-        
+
         .circulo{
-            background: #779186;
+            background: map-get($map:$palette , $key:'gris');
             display: flex;
             justify-content: center;
             align-items: center;

@@ -2,6 +2,7 @@
     .contenedor-frase{
         background-image: url(../assets/img/imagen-principal.jpg);
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
         padding: 10rem;
         .frasePrincipal{
@@ -40,9 +41,8 @@
             }
     }
     .circulo{
-        width: 25rem;
-        height: 25rem;
-        border-radius: 50%;
+        @include circulo (25rem, 25rem, 50%);
+        
         h3{
             font-size: 2rem;
         }

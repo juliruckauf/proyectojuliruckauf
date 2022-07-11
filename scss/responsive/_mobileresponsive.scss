@@ -3,16 +3,15 @@
         background-image: url(../assets/img/imagen-principal.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size:cover;
+        background-size: cover;
         padding: 5rem;
-            .frasePrincipal{
-                font-size: 2rem;
-                text-transform: uppercase;
-                line-height: 2rem;
-                text-align:center;
-                justify-content: center;
-                color: whitesmoke;
-            }
+        .frasePrincipal{
+            font-size: 2rem;
+            text-transform: uppercase;
+            line-height: 2rem;
+            text-align:center;
+            justify-content: center;
+        }
     }
     
     .card{
@@ -23,11 +22,14 @@
                 padding-bottom: 1rem;
             }
     }
+
+    .card-text{
+        font-size: 0.9rem;
+    }
     
     .circulo{
-        width: 15rem;
-        height: 15rem;
-        border-radius: 50%;
+        @include circulo (15rem, 15rem, 50%);
+        
         h3{
             font-size: 1rem;
         }

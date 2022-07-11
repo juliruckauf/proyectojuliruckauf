@@ -2,7 +2,7 @@
     font-size: 3rem;
     font-family: 'Alegreya Sans';
     font-weight: bold;
-    color: #8d4d28;
+    color: map-get($map:$palette , $key:'rosa');
 }
 
 form{

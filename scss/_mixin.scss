@@ -1,0 +1,10 @@
+@mixin circulo($width, $height, $border-radius){
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+}
+
+
+
+
+

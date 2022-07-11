@@ -25,12 +25,12 @@
 }
 
 .galeria img:hover{
-    border: 10px solid whitesmoke;
+    border: 10px solid map-get($map:$palette , $key:'secondary');
 }
 .galeria video:hover{
-    border: 10px solid whitesmoke;
+    border: 10px solid map-get($map:$palette , $key:'secondary' );
 }
 
 .circulo:hover{
-    background-color: #DDC5B8;
+    background-color: map-get($map:$palette , $key:'rosa');
 }
