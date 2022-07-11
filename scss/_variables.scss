@@ -1,0 +1,13 @@
+@mixin tarjetas ($background){
+    background-color: $background;
+}
+
+.card-1{
+    @include tarjetas (#E3DCD0);
+}
+.card-2{
+    @include tarjetas (#779186);
+}
+.card-3{
+    @include tarjetas (#E5CBB5);
+}
