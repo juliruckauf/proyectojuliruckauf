@@ -9,15 +9,15 @@
 }
 .tarjeta-2{
     @extend .card;
-    background-color: map-get($map:$palette , $key:'gris' );
+    background-color: map-get($map:$palette , $key:'gris');
 }
 .tarjeta-3{
     @extend .card;
-    background-color: map-get($map:$palette , $key:'gris' );
+    background-color: map-get($map:$palette , $key:'gris');
 }
 
 .card-text{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: black;
     font-size: 1.1rem;
     text-align: justify;
