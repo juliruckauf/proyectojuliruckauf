@@ -1,9 +1,10 @@
 /*FOOTER*/
-.container-fluid-1{
+.redes-sociales{
     padding: 1rem;
+    background-color: map-get($map: $palette, $key:'primary' );
     font-family: 'Yanone Kaffeesatz';
     font-size: 1.2rem;
-    color: map-get($map:$palette , $key:'secondary');
+    color: black;
     justify-content: center;
     align-content: center;
 }

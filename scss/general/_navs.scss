@@ -1,12 +1,12 @@
 .navbar{
-    background-color: map-get($map: $palette, $key:'primary');
+    background-color: map-get($map: $palette, $key:'primary' );
 }
 
 .navbar-brand{
     text-transform: uppercase;
-    color: black;
-    text-shadow: 2px 2px 2px white;
-    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Caveat', cursive;
 }
@@ -18,4 +18,5 @@
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: bold;
     letter-spacing: 0.03rem;
+    font-size: 0.9rem;
 }

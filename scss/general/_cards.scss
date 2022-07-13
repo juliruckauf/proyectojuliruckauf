@@ -1,5 +1,5 @@
 .card{
-    border-radius: 1%;
+    border-radius: 2%;
     border: black solid;
 }
 
@@ -9,11 +9,11 @@
 }
 .tarjeta-2{
     @extend .card;
-    background-color: map-get($map:$palette , $key:'gris');
+    background-color: map-get($map:$palette , $key:'rosa');
 }
 .tarjeta-3{
     @extend .card;
-    background-color: map-get($map:$palette , $key:'gris');
+    background-color: map-get($map:$palette , $key:'rosa');
 }
 
 .card-text{

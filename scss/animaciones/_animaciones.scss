@@ -20,17 +20,17 @@
 
 .nav-link:hover{
     transform: translateY(10px);
-    color: #5C7373;
+    color: map-get($map: $palette, $key:'rosa' );
     font-weight: bolder;
 }
 
 .galeria img:hover{
-    border: 10px solid map-get($map:$palette , $key:'secondary');
+    border: 10px solid map-get($map:$palette , $key:'rosa');
 }
 .galeria video:hover{
-    border: 10px solid map-get($map:$palette , $key:'secondary' );
+    border: 10px solid map-get($map:$palette , $key:'rosa' );
 }
 
 .circulo:hover{
-    background-color: map-get($map:$palette , $key:'rosa');
+    background-color: map-get($map:$palette , $key:'primary');
 }

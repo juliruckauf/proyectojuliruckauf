@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #DDC5B8;
 }
 
 .items-principales {
@@ -46,14 +46,14 @@ body {
 }
 
 .navbar {
-  background-color: #073d49;
+  background-color: #756962;
 }
 
 .navbar-brand {
   text-transform: uppercase;
-  color: black;
-  text-shadow: 2px 2px 2px white;
-  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: "Caveat", cursive;
 }
@@ -65,25 +65,27 @@ body {
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: bold;
   letter-spacing: 0.03rem;
+  font-size: 0.9rem;
 }
 
 /*FOOTER*/
-.container-fluid-1 {
+.redes-sociales {
   padding: 1rem;
+  background-color: #756962;
   font-family: "Yanone Kaffeesatz";
   font-size: 1.2rem;
-  color: whitesmoke;
+  color: black;
   justify-content: center;
   align-content: center;
 }
 
 .contenedor-titulo-pagina {
   text-align: center;
-  background-image: url(../assets/img/imagen-secundaria.jpg);
+  background-image: url(../assets/img/background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 7rem;
+  padding: 10rem;
 }
 .contenedor-titulo-pagina .titulo-pagina {
   font-size: 2rem;
@@ -95,19 +97,19 @@ body {
 }
 
 .galeria img {
-  width: 100%;
-  height: 500px;
+  width: 90%;
+  height: 80%;
   padding: 2rem;
 }
 
 .galeria video {
-  width: 100%;
-  height: 500px;
+  width: 90%;
+  height: 80%;
   padding: 2rem;
 }
 
 .card, .tarjeta-3, .tarjeta-2, .tarjeta-1 {
-  border-radius: 1%;
+  border-radius: 2%;
   border: black solid;
 }
 
@@ -116,11 +118,11 @@ body {
 }
 
 .tarjeta-2 {
-  background-color: #779186;
+  background-color: #DDC5B8;
 }
 
 .tarjeta-3 {
-  background-color: #779186;
+  background-color: #DDC5B8;
 }
 
 .card-text {
@@ -277,20 +279,20 @@ form {
 }
 .nav-link:hover {
   transform: translateY(10px);
-  color: #5C7373;
+  color: #DDC5B8;
   font-weight: bolder;
 }
 
 .galeria img:hover {
-  border: 10px solid whitesmoke;
+  border: 10px solid #DDC5B8;
 }
 
 .galeria video:hover {
-  border: 10px solid whitesmoke;
+  border: 10px solid #DDC5B8;
 }
 
 .circulo:hover {
-  background-color: #DDC5B8;
+  background-color: #756962;
 }
 
 /*# sourceMappingURL=style.css.map */
