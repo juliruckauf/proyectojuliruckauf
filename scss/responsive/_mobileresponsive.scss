@@ -42,8 +42,11 @@
     }
 
     .titulo-pagina{
-        justify-content: center;
+        justify-self: center;
+        font-size: 1rem;
+        text-justify: auto;
         text-align: center;
+        overflow: hidden;
     }
 
     .body{
