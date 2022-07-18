@@ -7,6 +7,8 @@
         padding: 10rem;
         .frasePrincipal{
             font-size: 3rem;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-weight: bolder;
             line-height: 5rem;
             text-align: center;
             color: black;
@@ -48,3 +50,9 @@
         }
     }
 }
+
+.titulo-pagina{
+    justify-content: center;
+    text-align: center;
+}
+

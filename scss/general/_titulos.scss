@@ -5,12 +5,13 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 10rem;
-        .titulo-pagina{
-            font-size: 2rem;
-            text-transform: uppercase;
-            line-height: 2rem;
-            text-align:center;
-            justify-content: center;
-            color: map-get($map:$palette , $key:'secondary' );
-        }
+    .titulo-pagina{
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+        line-height: 2rem;
+        text-align:center;
+        justify-content: center;
+        color: map-get($map:$palette , $key:'secondary' );
+    }
 }

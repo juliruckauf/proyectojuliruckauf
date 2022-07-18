@@ -20,6 +20,7 @@
     .card-text{
         font-size: 1rem;
     }
+
     .circulo{
         @include circulo (20rem, 20rem, 50%);
     
@@ -27,4 +28,9 @@
             font-size: 1.5rem;
         }
     }
+}
+
+.titulo-pagina{
+    justify-content: center;
+    text-align: center;
 }
