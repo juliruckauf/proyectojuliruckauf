@@ -1,19 +1,27 @@
 .frasePrincipal{
-    animation: cambio 4s ease-in-out infinite;
+    animation: cambio 7s ease-in-out infinite;
 }
 
 @keyframes cambio{
     0%{
         color: black;
+        text-shadow: 2px 2px 2px map-get($map: $palette, $key:'secondary' );
     }
-    30%{
-        color: whitesmoke;
+    25%{
+        color: transparent;
+        text-shadow: none;
     }
-    60%{
+    50%{
         color: black;
+        text-shadow: 2px 2px 2px map-get($map: $palette, $key:'secondary' );
     }
-    90%{
-        color: whitesmoke;
+    75%{
+        color: transparent;
+        text-shadow: none;
+    }
+    99%{
+        color: black;
+        text-shadow: 2px 2px 2px map-get($map: $palette, $key:'secondary' );
     }
 
 }
@@ -25,10 +33,10 @@
 }
 
 .galeria img:hover{
-    border: 10px solid map-get($map:$palette , $key:'rosa');
+    border: 10px solid map-get($map:$palette , $key:'secondary');
 }
 .galeria video:hover{
-    border: 10px solid map-get($map:$palette , $key:'rosa' );
+    border: 10px solid map-get($map:$palette , $key:'secondary' );
 }
 
 .circulo:hover{

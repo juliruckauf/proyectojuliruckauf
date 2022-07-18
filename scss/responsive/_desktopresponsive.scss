@@ -12,6 +12,7 @@
             line-height: 5rem;
             text-align: center;
             color: black;
+            text-shadow: 2px 2px 2px map-get($map: $palette, $key:'secondary' );
         }
     }
     .card{
