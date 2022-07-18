@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #DDC5B8;
+  background-color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -312,6 +312,10 @@ form {
 
 .circulo:hover {
   background-color: #756962;
+}
+
+footer a:hover {
+  border: 5px solid #756962;
 }
 
 /*# sourceMappingURL=style.css.map */
