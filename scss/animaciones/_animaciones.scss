@@ -33,10 +33,10 @@
 }
 
 .galeria img:hover{
-    border: 10px solid map-get($map:$palette , $key:'secondary');
+    border: 15px solid map-get($map:$palette , $key:'secondary');
 }
 .galeria video:hover{
-    border: 10px solid map-get($map:$palette , $key:'secondary' );
+    border: 15px solid map-get($map:$palette , $key:'secondary' );
 }
 
 .circulo:hover{
@@ -44,5 +44,5 @@
 }
 
 footer a:hover{
-    border: 5px solid map-get($map:$palette , $key:'primary' );
+    color: map-get($map: $palette, $key:'rosa' );
 }

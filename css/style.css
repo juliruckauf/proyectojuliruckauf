@@ -97,14 +97,14 @@ body {
 
 .galeria img {
   width: 90%;
-  height: 80%;
-  padding: 2rem;
+  height: 70%;
+  padding: 1rem;
 }
 
 .galeria video {
   width: 90%;
-  height: 80%;
-  padding: 2rem;
+  height: 70%;
+  padding: 1rem;
 }
 
 .card, .tarjeta-3, .tarjeta-2, .tarjeta-1 {
@@ -194,7 +194,7 @@ form {
 }
 
 .body {
-  overflow-x: hidden;
+  overflow-x: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -323,11 +323,11 @@ form {
 }
 
 .galeria img:hover {
-  border: 10px solid whitesmoke;
+  border: 15px solid whitesmoke;
 }
 
 .galeria video:hover {
-  border: 10px solid whitesmoke;
+  border: 15px solid whitesmoke;
 }
 
 .circulo:hover {
