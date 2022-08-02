@@ -1,19 +1,19 @@
 .card{
     border-radius: 2%;
-    border: black solid;
+    border: map-get($map:$palette , $key:'secondary' );
 }
 
 .tarjeta-1{
     @extend .card;
-    background-color: map-get($map:$palette , $key:'rosa' );
+    background-color: map-get($map:$palette , $key:'secondary' );
 }
 .tarjeta-2{
     @extend .card;
-    background-color: map-get($map:$palette , $key:'rosa');
+    background-color: map-get($map:$palette , $key:'secondary');
 }
 .tarjeta-3{
     @extend .card;
-    background-color: map-get($map:$palette , $key:'rosa');
+    background-color: map-get($map:$palette , $key:'secondary');
 }
 
 .card-text{
@@ -21,4 +21,6 @@
     font-size: 1.1rem;
     text-align: justify;
 }
+
+
 

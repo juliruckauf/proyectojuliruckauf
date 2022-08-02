@@ -99,29 +99,31 @@ body {
   width: 90%;
   height: 70%;
   padding: 1rem;
+  align-items: center;
 }
 
 .galeria video {
   width: 90%;
   height: 70%;
   padding: 1rem;
+  align-items: center;
 }
 
 .card, .tarjeta-3, .tarjeta-2, .tarjeta-1 {
   border-radius: 2%;
-  border: black solid;
+  border: whitesmoke;
 }
 
 .tarjeta-1 {
-  background-color: #DDC5B8;
+  background-color: whitesmoke;
 }
 
 .tarjeta-2 {
-  background-color: #DDC5B8;
+  background-color: whitesmoke;
 }
 
 .tarjeta-3 {
-  background-color: #DDC5B8;
+  background-color: whitesmoke;
 }
 
 .card-text {
@@ -193,8 +195,8 @@ form {
   text-align: center;
 }
 
-.body {
-  overflow-x: none;
+.galeria img {
+  align-self: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -253,6 +255,9 @@ form {
   .card, .tarjeta-1, .tarjeta-2, .tarjeta-3 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  .img-marina {
+    padding-left: 5rem;
   }
   .items-principales {
     display: grid;
@@ -334,8 +339,8 @@ form {
   background-color: #756962;
 }
 
-footer a:hover {
-  border: 5px solid #756962;
+footer svg:hover {
+  color: #DDC5B8;
 }
 
 /*# sourceMappingURL=style.css.map */

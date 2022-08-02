@@ -43,6 +43,6 @@
     background-color: map-get($map:$palette , $key:'primary');
 }
 
-footer a:hover{
+footer svg:hover{
     color: map-get($map: $palette, $key:'rosa' );
 }
